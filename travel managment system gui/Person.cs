@@ -29,14 +29,21 @@ using System.Data;
 
     public class Manager : Person
     {
+        Manager(string password, double income)
+        {
+            this.password = password;
+            this.income = income;
+        }
         string password;
         double income;
-        public Trip CreatTrip() {
+        public Trip CreatTrip()
+        {
             throw new NotImplementedException();
 
         }
         public void DisplayInfo() { }
-        public Trip[] ViewHistory() {
+        public Trip[] ViewHistory()
+        {
             throw new NotImplementedException();
         }
 
@@ -44,6 +51,10 @@ using System.Data;
 
    public  class Admin : Person
     {
+    Admin(string password)
+      {
+        this.PassWord = password;
+      }
         string PassWord;
         public Customer[] EditCustomerAcc() { throw new NotImplementedException(); }
         public void AddCustomer(Customer customer) { }
@@ -87,6 +98,10 @@ using System.Data;
     }
    public class TourGuide : Person
     {
+    TourGuide(int NoOftripsPerMonth)
+    {
+        this.NoOftripsPerMonth = NoOftripsPerMonth;
+    }
         int NoOftripsPerMonth;
         double SalaryCurrentMonth { get; set; }
         string status { get; set; }

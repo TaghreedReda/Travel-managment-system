@@ -54,3 +54,14 @@ C:\Users\fatma\Desktop\travel managment system gui 1\obj\Debug\travel managment 
 C:\Users\fatma\Desktop\travel managment system gui 1\bin\Debug\travel managment system gui.exe.config
 C:\Users\fatma\Desktop\travel managment system gui 1\bin\Debug\travel managment system gui.exe
 C:\Users\fatma\Desktop\travel managment system gui 1\bin\Debug\travel managment system gui.pdb
+C:\Users\fatma\Desktop\Mostafa repository\travel managment system gui\bin\Debug\travel managment system gui.exe.config
+C:\Users\fatma\Desktop\Mostafa repository\travel managment system gui\bin\Debug\travel managment system gui.exe
+C:\Users\fatma\Desktop\Mostafa repository\travel managment system gui\bin\Debug\travel managment system gui.pdb
+C:\Users\fatma\Desktop\Mostafa repository\travel managment system gui\obj\Debug\travel managment system gui.csprojResolveAssemblyReference.cache
+C:\Users\fatma\Desktop\Mostafa repository\travel managment system gui\obj\Debug\travel_managment_system_gui.Admin.resources
+C:\Users\fatma\Desktop\Mostafa repository\travel managment system gui\obj\Debug\travel_managment_system_gui.Form1.resources
+C:\Users\fatma\Desktop\Mostafa repository\travel managment system gui\obj\Debug\travel_managment_system_gui.Properties.Resources.resources
+C:\Users\fatma\Desktop\Mostafa repository\travel managment system gui\obj\Debug\travel managment system gui.csproj.GenerateResource.cache
+C:\Users\fatma\Desktop\Mostafa repository\travel managment system gui\obj\Debug\travel managment system gui.csproj.CoreCompileInputs.cache
+C:\Users\fatma\Desktop\Mostafa repository\travel managment system gui\obj\Debug\travel managment system gui.exe
+C:\Users\fatma\Desktop\Mostafa repository\travel managment system gui\obj\Debug\travel managment system gui.pdb
