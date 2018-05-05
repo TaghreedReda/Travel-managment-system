@@ -63,6 +63,8 @@
             this.LandingExit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.ManagerCreatePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CreationSilverPrice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CreationBronzePrice)).BeginInit();
@@ -84,6 +86,8 @@
             // 
             // ManagerCreatePanel
             // 
+            this.ManagerCreatePanel.Controls.Add(this.textBox1);
+            this.ManagerCreatePanel.Controls.Add(this.label2);
             this.ManagerCreatePanel.Controls.Add(this.dateTimePicker1);
             this.ManagerCreatePanel.Controls.Add(this.label1);
             this.ManagerCreatePanel.Controls.Add(this.CreationBackButton);
@@ -255,7 +259,7 @@
             // 
             // CreationDestination
             // 
-            this.CreationDestination.Location = new System.Drawing.Point(254, 58);
+            this.CreationDestination.Location = new System.Drawing.Point(259, 84);
             this.CreationDestination.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CreationDestination.Name = "CreationDestination";
             this.CreationDestination.Size = new System.Drawing.Size(148, 26);
@@ -304,7 +308,7 @@
             // DummyDestinationLabel
             // 
             this.DummyDestinationLabel.AutoSize = true;
-            this.DummyDestinationLabel.Location = new System.Drawing.Point(104, 62);
+            this.DummyDestinationLabel.Location = new System.Drawing.Point(104, 87);
             this.DummyDestinationLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DummyDestinationLabel.Name = "DummyDestinationLabel";
             this.DummyDestinationLabel.Size = new System.Drawing.Size(102, 20);
@@ -451,6 +455,24 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(298, 26);
             this.dateTimePicker1.TabIndex = 25;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(104, 24);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(26, 20);
+            this.label2.TabIndex = 26;
+            this.label2.Text = "ID";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(254, 21);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(148, 26);
+            this.textBox1.TabIndex = 27;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -513,5 +535,7 @@
         private System.Windows.Forms.Button LandingExit;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

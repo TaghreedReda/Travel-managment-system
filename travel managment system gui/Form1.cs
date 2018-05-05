@@ -70,5 +70,10 @@ namespace travel_managment_system_gui
         {
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
