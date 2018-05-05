@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "travel managment system gui", "travel managment system gui.csproj", "{FF9AACC2-A144-4D66-892E-38C4D8872575}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{542127A8-E260-4366-8F34-08C1D6333CB6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF9AACC2-A144-4D66-892E-38C4D8872575}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF9AACC2-A144-4D66-892E-38C4D8872575}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF9AACC2-A144-4D66-892E-38C4D8872575}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF9AACC2-A144-4D66-892E-38C4D8872575}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98252F96-D972-4EB4-85B2-157D43A1D465}
+	EndGlobalSection
+EndGlobal
