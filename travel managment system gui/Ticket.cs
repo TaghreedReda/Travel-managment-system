@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Data.SqlClient;
 using System.Data;
-using Travel_Managment_System;
+//using Travel_Managment_System;
 
-namespace travel_managment_system_gui
-{
+
     public class Ticket
     {
        private City From;
@@ -50,4 +49,3 @@ namespace travel_managment_system_gui
         public string Level { get => level; set => level = value; }
         public double price { get => Price; set => Price = value; }
     }
-}

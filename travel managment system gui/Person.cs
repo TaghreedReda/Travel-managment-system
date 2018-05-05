@@ -8,8 +8,8 @@ using System.Data.SqlClient;
 using System.Data;
 
 
-namespace Travel_Managment_System
-{
+
+
     public abstract class Person
     {
         private string name;
@@ -156,56 +156,3 @@ namespace Travel_Managment_System
         public void AddTrip(Trip T) { }
         public Trip[] ViewNextTrips() { throw new NotImplementedException(); }
     }
-public class Ticket
-    {
-        City From;
-        City To;
-        string seatnum;
-        DateTime Date;
-        TimeSpan Duration;
-        TimeSpan ArrivalTime;
-        TimeSpan DepartureTime;
-        string TicketNo;
-        Customer customer;
-        string level;
-        double Price;
-    }
- public class Trip
-    {
-        Ticket TicketDitails;
-        TourGuide tourguide;
-        int NoOfSeats;
-        int NoOfAvailableSeats;
-        City From;
-        City To;
-        DateTime Date;
-        TimeSpan Duration;
-        TimeSpan ArrivalTime;
-        TimeSpan DepartureTime;
-    }
-   public class City
-    {
-        float Weather;
-        string Transportation;
-        string Language;
-        TimeSpan EastrenTime;
-        string[] Sights;
-        double ForeignCurrency;
-    }
-    public class Family : Trip
-    {
-        int NoFamilyMembers;
-        Customer[] FamilyMemeber;
-    }
-   public class Couple : Trip
-    {
-        int NoOfCouples;
-        Customer[] couple;
-    }
-  public class General : Trip
-    {
-        int NoOfTourists;
-        Customer[] Tourists;
-    }
-
-}

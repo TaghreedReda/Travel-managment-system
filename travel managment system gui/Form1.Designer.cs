@@ -61,6 +61,8 @@
             this.AdminViewHistoryButton = new System.Windows.Forms.Button();
             this.LandingManagerButton = new System.Windows.Forms.Button();
             this.LandingExit = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.ManagerCreatePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CreationSilverPrice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CreationBronzePrice)).BeginInit();
@@ -71,10 +73,10 @@
             // 
             // Admin_B
             // 
-            this.Admin_B.Location = new System.Drawing.Point(368, 26);
+            this.Admin_B.Location = new System.Drawing.Point(414, 32);
             this.Admin_B.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Admin_B.Name = "Admin_B";
-            this.Admin_B.Size = new System.Drawing.Size(350, 136);
+            this.Admin_B.Size = new System.Drawing.Size(394, 170);
             this.Admin_B.TabIndex = 19;
             this.Admin_B.Text = "Admin";
             this.Admin_B.UseVisualStyleBackColor = true;
@@ -82,6 +84,8 @@
             // 
             // ManagerCreatePanel
             // 
+            this.ManagerCreatePanel.Controls.Add(this.dateTimePicker1);
+            this.ManagerCreatePanel.Controls.Add(this.label1);
             this.ManagerCreatePanel.Controls.Add(this.CreationBackButton);
             this.ManagerCreatePanel.Controls.Add(this.CreationCreateButton);
             this.ManagerCreatePanel.Controls.Add(this.CreationTargetToAvailButton);
@@ -105,9 +109,9 @@
             this.ManagerCreatePanel.Controls.Add(this.description);
             this.ManagerCreatePanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ManagerCreatePanel.Location = new System.Drawing.Point(0, 0);
-            this.ManagerCreatePanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ManagerCreatePanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ManagerCreatePanel.Name = "ManagerCreatePanel";
-            this.ManagerCreatePanel.Size = new System.Drawing.Size(1161, 533);
+            this.ManagerCreatePanel.Size = new System.Drawing.Size(1306, 666);
             this.ManagerCreatePanel.TabIndex = 17;
             this.ManagerCreatePanel.Visible = false;
             this.ManagerCreatePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ManagerCreatePanel_Paint);
@@ -115,10 +119,10 @@
             // CreationBackButton
             // 
             this.CreationBackButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.CreationBackButton.Location = new System.Drawing.Point(683, 498);
-            this.CreationBackButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CreationBackButton.Location = new System.Drawing.Point(768, 622);
+            this.CreationBackButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CreationBackButton.Name = "CreationBackButton";
-            this.CreationBackButton.Size = new System.Drawing.Size(100, 28);
+            this.CreationBackButton.Size = new System.Drawing.Size(112, 35);
             this.CreationBackButton.TabIndex = 22;
             this.CreationBackButton.Text = "Back";
             this.CreationBackButton.UseVisualStyleBackColor = true;
@@ -127,10 +131,10 @@
             // CreationCreateButton
             // 
             this.CreationCreateButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.CreationCreateButton.Location = new System.Drawing.Point(316, 498);
-            this.CreationCreateButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CreationCreateButton.Location = new System.Drawing.Point(356, 622);
+            this.CreationCreateButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CreationCreateButton.Name = "CreationCreateButton";
-            this.CreationCreateButton.Size = new System.Drawing.Size(100, 28);
+            this.CreationCreateButton.Size = new System.Drawing.Size(112, 35);
             this.CreationCreateButton.TabIndex = 21;
             this.CreationCreateButton.Text = "Create";
             this.CreationCreateButton.UseVisualStyleBackColor = true;
@@ -138,10 +142,10 @@
             // CreationTargetToAvailButton
             // 
             this.CreationTargetToAvailButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.CreationTargetToAvailButton.Location = new System.Drawing.Point(765, 176);
-            this.CreationTargetToAvailButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CreationTargetToAvailButton.Location = new System.Drawing.Point(861, 220);
+            this.CreationTargetToAvailButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CreationTargetToAvailButton.Name = "CreationTargetToAvailButton";
-            this.CreationTargetToAvailButton.Size = new System.Drawing.Size(46, 48);
+            this.CreationTargetToAvailButton.Size = new System.Drawing.Size(52, 60);
             this.CreationTargetToAvailButton.TabIndex = 20;
             this.CreationTargetToAvailButton.Text = "<";
             this.CreationTargetToAvailButton.UseVisualStyleBackColor = true;
@@ -149,10 +153,10 @@
             // CreationAvailToTargetButton
             // 
             this.CreationAvailToTargetButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.CreationAvailToTargetButton.Location = new System.Drawing.Point(765, 96);
-            this.CreationAvailToTargetButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CreationAvailToTargetButton.Location = new System.Drawing.Point(861, 120);
+            this.CreationAvailToTargetButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CreationAvailToTargetButton.Name = "CreationAvailToTargetButton";
-            this.CreationAvailToTargetButton.Size = new System.Drawing.Size(46, 48);
+            this.CreationAvailToTargetButton.Size = new System.Drawing.Size(52, 60);
             this.CreationAvailToTargetButton.TabIndex = 19;
             this.CreationAvailToTargetButton.Text = ">";
             this.CreationAvailToTargetButton.UseVisualStyleBackColor = true;
@@ -160,161 +164,161 @@
             // CreationTargetCustomers
             // 
             this.CreationTargetCustomers.FormattingEnabled = true;
-            this.CreationTargetCustomers.ItemHeight = 16;
-            this.CreationTargetCustomers.Location = new System.Drawing.Point(853, 39);
-            this.CreationTargetCustomers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CreationTargetCustomers.ItemHeight = 20;
+            this.CreationTargetCustomers.Location = new System.Drawing.Point(960, 49);
+            this.CreationTargetCustomers.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CreationTargetCustomers.Name = "CreationTargetCustomers";
             this.CreationTargetCustomers.ScrollAlwaysVisible = true;
-            this.CreationTargetCustomers.Size = new System.Drawing.Size(159, 212);
+            this.CreationTargetCustomers.Size = new System.Drawing.Size(178, 264);
             this.CreationTargetCustomers.TabIndex = 18;
             // 
             // CreationAvailCustomers
             // 
             this.CreationAvailCustomers.FormattingEnabled = true;
-            this.CreationAvailCustomers.ItemHeight = 16;
-            this.CreationAvailCustomers.Location = new System.Drawing.Point(562, 39);
-            this.CreationAvailCustomers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CreationAvailCustomers.ItemHeight = 20;
+            this.CreationAvailCustomers.Location = new System.Drawing.Point(632, 49);
+            this.CreationAvailCustomers.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CreationAvailCustomers.Name = "CreationAvailCustomers";
             this.CreationAvailCustomers.ScrollAlwaysVisible = true;
-            this.CreationAvailCustomers.Size = new System.Drawing.Size(159, 212);
+            this.CreationAvailCustomers.Size = new System.Drawing.Size(178, 264);
             this.CreationAvailCustomers.TabIndex = 17;
             // 
             // DummyBronzeLabel
             // 
             this.DummyBronzeLabel.AutoSize = true;
-            this.DummyBronzeLabel.Location = new System.Drawing.Point(736, 423);
+            this.DummyBronzeLabel.Location = new System.Drawing.Point(828, 529);
             this.DummyBronzeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DummyBronzeLabel.Name = "DummyBronzeLabel";
-            this.DummyBronzeLabel.Size = new System.Drawing.Size(53, 17);
+            this.DummyBronzeLabel.Size = new System.Drawing.Size(60, 20);
             this.DummyBronzeLabel.TabIndex = 16;
             this.DummyBronzeLabel.Text = "Bronze";
             // 
             // DummySilveLabel
             // 
             this.DummySilveLabel.AutoSize = true;
-            this.DummySilveLabel.Location = new System.Drawing.Point(519, 423);
+            this.DummySilveLabel.Location = new System.Drawing.Point(584, 529);
             this.DummySilveLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DummySilveLabel.Name = "DummySilveLabel";
-            this.DummySilveLabel.Size = new System.Drawing.Size(43, 17);
+            this.DummySilveLabel.Size = new System.Drawing.Size(47, 20);
             this.DummySilveLabel.TabIndex = 15;
             this.DummySilveLabel.Text = "Silver";
             // 
             // CreationSilverPrice
             // 
-            this.CreationSilverPrice.Location = new System.Drawing.Point(468, 444);
-            this.CreationSilverPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CreationSilverPrice.Location = new System.Drawing.Point(526, 555);
+            this.CreationSilverPrice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CreationSilverPrice.Name = "CreationSilverPrice";
-            this.CreationSilverPrice.Size = new System.Drawing.Size(160, 22);
+            this.CreationSilverPrice.Size = new System.Drawing.Size(180, 26);
             this.CreationSilverPrice.TabIndex = 14;
             // 
             // CreationBronzePrice
             // 
-            this.CreationBronzePrice.Location = new System.Drawing.Point(683, 444);
-            this.CreationBronzePrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CreationBronzePrice.Location = new System.Drawing.Point(768, 555);
+            this.CreationBronzePrice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CreationBronzePrice.Name = "CreationBronzePrice";
-            this.CreationBronzePrice.Size = new System.Drawing.Size(160, 22);
+            this.CreationBronzePrice.Size = new System.Drawing.Size(180, 26);
             this.CreationBronzePrice.TabIndex = 13;
             // 
             // CreationGoldenPrice
             // 
-            this.CreationGoldenPrice.Location = new System.Drawing.Point(237, 444);
-            this.CreationGoldenPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CreationGoldenPrice.Location = new System.Drawing.Point(267, 555);
+            this.CreationGoldenPrice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CreationGoldenPrice.Name = "CreationGoldenPrice";
-            this.CreationGoldenPrice.Size = new System.Drawing.Size(160, 22);
+            this.CreationGoldenPrice.Size = new System.Drawing.Size(180, 26);
             this.CreationGoldenPrice.TabIndex = 12;
             // 
             // CreationTourGuideComboBox
             // 
             this.CreationTourGuideComboBox.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.CreationTourGuideComboBox.FormattingEnabled = true;
-            this.CreationTourGuideComboBox.Location = new System.Drawing.Point(226, 288);
-            this.CreationTourGuideComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CreationTourGuideComboBox.Location = new System.Drawing.Point(254, 360);
+            this.CreationTourGuideComboBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CreationTourGuideComboBox.Name = "CreationTourGuideComboBox";
-            this.CreationTourGuideComboBox.Size = new System.Drawing.Size(132, 24);
+            this.CreationTourGuideComboBox.Size = new System.Drawing.Size(148, 28);
             this.CreationTourGuideComboBox.TabIndex = 11;
             // 
             // CreationDateTimePicker
             // 
-            this.CreationDateTimePicker.Location = new System.Drawing.Point(171, 121);
-            this.CreationDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CreationDateTimePicker.Location = new System.Drawing.Point(254, 151);
+            this.CreationDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CreationDateTimePicker.Name = "CreationDateTimePicker";
-            this.CreationDateTimePicker.Size = new System.Drawing.Size(265, 22);
+            this.CreationDateTimePicker.Size = new System.Drawing.Size(298, 26);
             this.CreationDateTimePicker.TabIndex = 10;
             // 
             // CreationMaxNo
             // 
-            this.CreationMaxNo.Location = new System.Drawing.Point(226, 204);
-            this.CreationMaxNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CreationMaxNo.Location = new System.Drawing.Point(255, 298);
+            this.CreationMaxNo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CreationMaxNo.Name = "CreationMaxNo";
-            this.CreationMaxNo.Size = new System.Drawing.Size(132, 22);
+            this.CreationMaxNo.Size = new System.Drawing.Size(148, 26);
             this.CreationMaxNo.TabIndex = 7;
             // 
             // CreationDestination
             // 
-            this.CreationDestination.Location = new System.Drawing.Point(226, 46);
-            this.CreationDestination.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CreationDestination.Location = new System.Drawing.Point(254, 58);
+            this.CreationDestination.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CreationDestination.Name = "CreationDestination";
-            this.CreationDestination.Size = new System.Drawing.Size(132, 22);
+            this.CreationDestination.Size = new System.Drawing.Size(148, 26);
             this.CreationDestination.TabIndex = 5;
             // 
             // DummyGoldLabel
             // 
             this.DummyGoldLabel.AutoSize = true;
-            this.DummyGoldLabel.Location = new System.Drawing.Point(283, 423);
+            this.DummyGoldLabel.Location = new System.Drawing.Point(318, 529);
             this.DummyGoldLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DummyGoldLabel.Name = "DummyGoldLabel";
-            this.DummyGoldLabel.Size = new System.Drawing.Size(54, 17);
+            this.DummyGoldLabel.Size = new System.Drawing.Size(61, 20);
             this.DummyGoldLabel.TabIndex = 4;
             this.DummyGoldLabel.Text = "Golden";
             // 
             // DummyTourGuideLabel
             // 
             this.DummyTourGuideLabel.AutoSize = true;
-            this.DummyTourGuideLabel.Location = new System.Drawing.Point(92, 292);
+            this.DummyTourGuideLabel.Location = new System.Drawing.Point(104, 365);
             this.DummyTourGuideLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DummyTourGuideLabel.Name = "DummyTourGuideLabel";
-            this.DummyTourGuideLabel.Size = new System.Drawing.Size(88, 17);
+            this.DummyTourGuideLabel.Size = new System.Drawing.Size(96, 20);
             this.DummyTourGuideLabel.TabIndex = 3;
             this.DummyTourGuideLabel.Text = "Tour Guide :";
             // 
             // DummyMaxNoLabel
             // 
             this.DummyMaxNoLabel.AutoSize = true;
-            this.DummyMaxNoLabel.Location = new System.Drawing.Point(92, 208);
+            this.DummyMaxNoLabel.Location = new System.Drawing.Point(113, 304);
             this.DummyMaxNoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DummyMaxNoLabel.Name = "DummyMaxNoLabel";
-            this.DummyMaxNoLabel.Size = new System.Drawing.Size(63, 17);
+            this.DummyMaxNoLabel.Size = new System.Drawing.Size(70, 20);
             this.DummyMaxNoLabel.TabIndex = 2;
             this.DummyMaxNoLabel.Text = "Max No :";
             // 
             // DummyDateLabel
             // 
             this.DummyDateLabel.AutoSize = true;
-            this.DummyDateLabel.Location = new System.Drawing.Point(92, 128);
+            this.DummyDateLabel.Location = new System.Drawing.Point(104, 151);
             this.DummyDateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DummyDateLabel.Name = "DummyDateLabel";
-            this.DummyDateLabel.Size = new System.Drawing.Size(46, 17);
+            this.DummyDateLabel.Size = new System.Drawing.Size(89, 20);
             this.DummyDateLabel.TabIndex = 1;
-            this.DummyDateLabel.Text = "Date :";
+            this.DummyDateLabel.Text = "Departure :";
             // 
             // DummyDestinationLabel
             // 
             this.DummyDestinationLabel.AutoSize = true;
-            this.DummyDestinationLabel.Location = new System.Drawing.Point(92, 50);
+            this.DummyDestinationLabel.Location = new System.Drawing.Point(104, 62);
             this.DummyDestinationLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DummyDestinationLabel.Name = "DummyDestinationLabel";
-            this.DummyDestinationLabel.Size = new System.Drawing.Size(91, 17);
+            this.DummyDestinationLabel.Size = new System.Drawing.Size(102, 20);
             this.DummyDestinationLabel.TabIndex = 0;
             this.DummyDestinationLabel.Text = "Destination : ";
             // 
             // description
             // 
             this.description.FormattingEnabled = true;
-            this.description.ItemHeight = 16;
-            this.description.Location = new System.Drawing.Point(573, 289);
+            this.description.ItemHeight = 20;
+            this.description.Location = new System.Drawing.Point(645, 361);
             this.description.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.description.Name = "description";
-            this.description.Size = new System.Drawing.Size(416, 84);
+            this.description.Size = new System.Drawing.Size(468, 104);
             this.description.TabIndex = 23;
             // 
             // ManagerPanel
@@ -327,19 +331,19 @@
             this.ManagerPanel.Controls.Add(this.AdminViewHistoryButton);
             this.ManagerPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ManagerPanel.Location = new System.Drawing.Point(0, 0);
-            this.ManagerPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ManagerPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ManagerPanel.Name = "ManagerPanel";
-            this.ManagerPanel.Size = new System.Drawing.Size(1161, 533);
+            this.ManagerPanel.Size = new System.Drawing.Size(1306, 666);
             this.ManagerPanel.TabIndex = 15;
             this.ManagerPanel.Visible = false;
             // 
             // AdminBackButton
             // 
             this.AdminBackButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.AdminBackButton.Location = new System.Drawing.Point(462, 510);
-            this.AdminBackButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AdminBackButton.Location = new System.Drawing.Point(520, 638);
+            this.AdminBackButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.AdminBackButton.Name = "AdminBackButton";
-            this.AdminBackButton.Size = new System.Drawing.Size(100, 28);
+            this.AdminBackButton.Size = new System.Drawing.Size(112, 35);
             this.AdminBackButton.TabIndex = 5;
             this.AdminBackButton.Text = "Back";
             this.AdminBackButton.UseVisualStyleBackColor = true;
@@ -350,10 +354,10 @@
             this.AdminDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.AdminDataView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.TripIdColumn});
-            this.AdminDataView.Location = new System.Drawing.Point(407, 96);
-            this.AdminDataView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AdminDataView.Location = new System.Drawing.Point(458, 120);
+            this.AdminDataView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.AdminDataView.Name = "AdminDataView";
-            this.AdminDataView.Size = new System.Drawing.Size(644, 374);
+            this.AdminDataView.Size = new System.Drawing.Size(724, 468);
             this.AdminDataView.TabIndex = 3;
             // 
             // TripIdColumn
@@ -365,19 +369,19 @@
             // 
             this.AdminIDComboBox.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.AdminIDComboBox.FormattingEnabled = true;
-            this.AdminIDComboBox.Location = new System.Drawing.Point(528, 39);
-            this.AdminIDComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AdminIDComboBox.Location = new System.Drawing.Point(594, 49);
+            this.AdminIDComboBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.AdminIDComboBox.Name = "AdminIDComboBox";
-            this.AdminIDComboBox.Size = new System.Drawing.Size(393, 24);
+            this.AdminIDComboBox.Size = new System.Drawing.Size(442, 28);
             this.AdminIDComboBox.TabIndex = 4;
             // 
             // AdminCreateButton
             // 
             this.AdminCreateButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.AdminCreateButton.Location = new System.Drawing.Point(46, 350);
-            this.AdminCreateButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AdminCreateButton.Location = new System.Drawing.Point(52, 438);
+            this.AdminCreateButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.AdminCreateButton.Name = "AdminCreateButton";
-            this.AdminCreateButton.Size = new System.Drawing.Size(312, 119);
+            this.AdminCreateButton.Size = new System.Drawing.Size(351, 149);
             this.AdminCreateButton.TabIndex = 2;
             this.AdminCreateButton.Text = "Create";
             this.AdminCreateButton.UseVisualStyleBackColor = true;
@@ -386,10 +390,10 @@
             // AdminViewTripsButton
             // 
             this.AdminViewTripsButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.AdminViewTripsButton.Location = new System.Drawing.Point(46, 192);
-            this.AdminViewTripsButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AdminViewTripsButton.Location = new System.Drawing.Point(52, 240);
+            this.AdminViewTripsButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.AdminViewTripsButton.Name = "AdminViewTripsButton";
-            this.AdminViewTripsButton.Size = new System.Drawing.Size(312, 119);
+            this.AdminViewTripsButton.Size = new System.Drawing.Size(351, 149);
             this.AdminViewTripsButton.TabIndex = 1;
             this.AdminViewTripsButton.Text = "View Trips";
             this.AdminViewTripsButton.UseVisualStyleBackColor = true;
@@ -397,10 +401,10 @@
             // AdminViewHistoryButton
             // 
             this.AdminViewHistoryButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.AdminViewHistoryButton.Location = new System.Drawing.Point(46, 39);
-            this.AdminViewHistoryButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AdminViewHistoryButton.Location = new System.Drawing.Point(52, 49);
+            this.AdminViewHistoryButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.AdminViewHistoryButton.Name = "AdminViewHistoryButton";
-            this.AdminViewHistoryButton.Size = new System.Drawing.Size(312, 119);
+            this.AdminViewHistoryButton.Size = new System.Drawing.Size(351, 149);
             this.AdminViewHistoryButton.TabIndex = 0;
             this.AdminViewHistoryButton.Text = "View History";
             this.AdminViewHistoryButton.UseVisualStyleBackColor = true;
@@ -408,10 +412,10 @@
             // LandingManagerButton
             // 
             this.LandingManagerButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.LandingManagerButton.Location = new System.Drawing.Point(368, 270);
-            this.LandingManagerButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LandingManagerButton.Location = new System.Drawing.Point(414, 338);
+            this.LandingManagerButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.LandingManagerButton.Name = "LandingManagerButton";
-            this.LandingManagerButton.Size = new System.Drawing.Size(341, 128);
+            this.LandingManagerButton.Size = new System.Drawing.Size(384, 160);
             this.LandingManagerButton.TabIndex = 18;
             this.LandingManagerButton.Text = "Manager";
             this.LandingManagerButton.UseVisualStyleBackColor = true;
@@ -420,20 +424,38 @@
             // LandingExit
             // 
             this.LandingExit.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.LandingExit.Location = new System.Drawing.Point(919, 470);
-            this.LandingExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LandingExit.Location = new System.Drawing.Point(1034, 588);
+            this.LandingExit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.LandingExit.Name = "LandingExit";
-            this.LandingExit.Size = new System.Drawing.Size(100, 28);
+            this.LandingExit.Size = new System.Drawing.Size(112, 35);
             this.LandingExit.TabIndex = 16;
             this.LandingExit.Text = "Exit";
             this.LandingExit.UseVisualStyleBackColor = true;
             this.LandingExit.Click += new System.EventHandler(this.LandingExit_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(113, 213);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(56, 20);
+            this.label1.TabIndex = 24;
+            this.label1.Text = "Arrival:";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(255, 208);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(298, 26);
+            this.dateTimePicker1.TabIndex = 25;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1161, 533);
+            this.ClientSize = new System.Drawing.Size(1306, 666);
             this.Controls.Add(this.ManagerCreatePanel);
             this.Controls.Add(this.ManagerPanel);
             this.Controls.Add(this.LandingManagerButton);
@@ -489,5 +511,7 @@
         private System.Windows.Forms.Button AdminViewHistoryButton;
         private System.Windows.Forms.Button LandingManagerButton;
         private System.Windows.Forms.Button LandingExit;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label1;
     }
 }

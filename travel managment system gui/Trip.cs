@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Data.SqlClient;
 using System.Data;
-using Travel_Managment_System;
+//using Travel_Managment_System;
 
-namespace travel_managment_system_gui
-{
-    public class Trip
+  public class Trip
     {
         private Ticket TicketDitails;
         private TourGuide tourguide;
@@ -47,4 +45,3 @@ namespace travel_managment_system_gui
         public TimeSpan arrivalTime { get => ArrivalTime; set => ArrivalTime = value; }
         public TimeSpan departureTime { get => DepartureTime; set => DepartureTime = value; }
     }
-}

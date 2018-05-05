@@ -12,9 +12,20 @@ namespace travel_managment_system_gui
 {
     public partial class Admin : Form
     {
-        public Admin()
+        Form1 parent;
+        bool ParentVisible;
+        public Admin(Form1 parent)
         {
+            ParentVisible = false;
+            FormClosed += Admin_FormClosed;
+            this.parent = parent;
             InitializeComponent();
+        }
+
+        private void Admin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (!ParentVisible)
+                parent.Close();
         }
 
         private void Admin_Load(object sender, EventArgs e)
@@ -29,7 +40,7 @@ namespace travel_managment_system_gui
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
             customerPanel.Visible = true;
 
         }
@@ -55,7 +66,7 @@ namespace travel_managment_system_gui
         {
             customerPanel.Visible = false;
             this.Show();
-            
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -65,9 +76,9 @@ namespace travel_managment_system_gui
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Form1 f1 = new Form1();
-            f1.Show();
-            this.Hide();
+            parent.Show();
+            ParentVisible = true;
+            this.Close();
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -95,7 +106,7 @@ namespace travel_managment_system_gui
 
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
-           
+
         }
     }
 }

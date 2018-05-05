@@ -29,9 +29,10 @@ namespace travel_managment_system_gui
 
         private void Admin_B_Click(object sender, EventArgs e)
         {
-            Admin admin = new Admin();
+            Admin admin = new Admin(this);
             admin.Show();
             this.Hide();
+            
         }
      
 
