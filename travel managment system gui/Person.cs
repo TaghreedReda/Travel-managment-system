@@ -10,25 +10,30 @@ using System.Data;
 
 namespace Travel_Managment_System
 {
-    class person
+    public abstract class Person
     {
-        string name;
-        int age;
-        string id;
-        string phonenum;
-        string gender;
-        public void Displayinfo()
-        {
+        private string name;
+        private int age;
+        private string id;
+        private string phonenum;
+        private string gender;
+        private string email;
 
-        }
+        public string Name { get => name; set => name = value; }
+        public string ID { get => id; set => id = value; }
+        public string Email { get => email; set => email = value; }
+        public int Age { get => age; set => age = value; }
+        public string Gender { get => gender; set => gender = value; }
+        public string PhoneNumber { get => gender; set => gender = value; }
     }
 
-    class Manager : person
+    public class Manager : Person
     {
         string password;
         double income;
         public Trip CreatTrip() {
             throw new NotImplementedException();
+
         }
         public void DisplayInfo() { }
         public Trip[] ViewHistory() {
@@ -36,7 +41,8 @@ namespace Travel_Managment_System
         }
 
     }
-    class Admin : person
+
+   public  class Admin : Person
     {
         string PassWord;
         public Customer[] EditCustomerAcc() { throw new NotImplementedException(); }
@@ -79,7 +85,7 @@ namespace Travel_Managment_System
         public void DisplayInfo() { }
         public bool TicketAvailability(Ticket ticket) { return true; }
     }
-    class TourGuide : person
+   public class TourGuide : Person
     {
         int NoOftripsPerMonth;
         double SalaryCurrentMonth { get; set; }
@@ -87,35 +93,70 @@ namespace Travel_Managment_System
         Trip nexttrip { get; set; }
         Trip[] History { get; set; }
         int NoOfAllTrips { get; set; }
+        string SpeakingLanguage;
+
         public int NoAvailableTourGuide { get; set; }
+        public TourGuide(string Id, string Name, string Nationality, int NoOftripsPerMonth, string SpeakingLanguage, string Gender, string Email, string PhoneNumber , double Salary)
+        {
+
+            this.ID = Id;
+            this.Name = Name;
+            this.SpeakingLanguage = SpeakingLanguage;
+            this.Gender = Gender;
+            this.Email = Email;
+            this.PhoneNumber = PhoneNumber;
+            this.SalaryCurrentMonth = Salary;
+            this.NoOftripsPerMonth = NoOftripsPerMonth ;
+        }
+
+
         public double CalcilateSalary()
         {
             throw new NotImplementedException();
             //set el salary bl nesba ll id of tourguide database counter 
         }
         public void DisplayInfo()
-        {
+        { //dataBase
             throw new NotImplementedException();
         }
         public Trip[] ViewHistory() {
+            //dataBase
             throw new NotImplementedException();
         }
     }
-    class Customer : person
+   public class Customer : Person
     {
         int NoOfTrips;
         Trip[] History;
         Trip[] NextTrip;
         int NoOfNextTrip;
+        bool HaveDisCount;
+        public Customer(string name, string phoneNumber, int age,string email ,string Gender )
+        {
+            this.Name = name;
+            this.PhoneNumber = phoneNumber;
+            this.Age = age;
+            this.Email = email;
+            this.Gender = Gender;
+            this.NoOfTrips = 0;
+            this.HaveDisCount = false;
+        }
         public void DisplayInfo() { }
-        public void CalculateDiscount() { }
-        public void IncNoOfTrips() { }
+        public void CalculateDiscount() {
+            if (NoOfTrips >= 2)
+            {
+                HaveDisCount = true;
+            }
+        }
+        public void IncNoOfTrips() {
+            NoOfTrips++;
+        }
         public Trip[] ViewHistory() { throw new NotImplementedException(); }
         public void CheckHistory() { }
         public void AddTrip(Trip T) { }
         public Trip[] ViewNextTrips() { throw new NotImplementedException(); }
     }
-    class Ticket
+public class Ticket
     {
         City From;
         City To;
@@ -129,7 +170,7 @@ namespace Travel_Managment_System
         string level;
         double Price;
     }
-    class Trip
+ public class Trip
     {
         Ticket TicketDitails;
         TourGuide tourguide;
@@ -142,7 +183,7 @@ namespace Travel_Managment_System
         TimeSpan ArrivalTime;
         TimeSpan DepartureTime;
     }
-    class City
+   public class City
     {
         float Weather;
         string Transportation;
@@ -151,17 +192,17 @@ namespace Travel_Managment_System
         string[] Sights;
         double ForeignCurrency;
     }
-    class Family : Trip
+    public class Family : Trip
     {
         int NoFamilyMembers;
         Customer[] FamilyMemeber;
     }
-    class Couple : Trip
+   public class Couple : Trip
     {
         int NoOfCouples;
         Customer[] couple;
     }
-    class General : Trip
+  public class General : Trip
     {
         int NoOfTourists;
         Customer[] Tourists;
